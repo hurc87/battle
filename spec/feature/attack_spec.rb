@@ -5,7 +5,7 @@
 feature "attacking" do
   scenario 'attack player 2' do
     sign_in_and_play
-    click_link 'Attack'
+    click_button 'Attack'
     expect(page).to have_content "Zoe attacked Lucas"
   end
 end
